@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+	char text[100]="abcd ABCD Klmnopqr";
+	char a;
+	int e=0;
+	
+	printf("아래문장을 따라서 입력해보세요!\n"); 
+	printf("%s\n", text);
+	
+	for(int i=0; i<18; i+=1) {
+		a = getch();
+		printf("%c",a);
+		if (a != text[i]) { e+=1;}
+	}
+	printf("\n%d개의 오타가 있었습니다.",e); 
+	
+ return 0;
+ }
+ 
+
