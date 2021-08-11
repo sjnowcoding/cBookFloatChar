@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+void owl() {
+	printf("   ()__()\n");
+	printf("   (＠♡＠)\n");
+	printf("   /)w w w/ \n");
+	printf("  |/w w /  \n");
+	printf(" ==T=T===< \n\n");
+}
+
+int main() {
+	
+	owl();
+	owl();
+	owl();
+
+	return 0;
+}
+
