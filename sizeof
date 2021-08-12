@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(void) {
+
+	int score[]={45,32,12,56,78};
+	int a;
+	
+	a=sizeof(score)/sizeof(int);
+	
+	printf("%d", a);
+	
+return 0;
+}
+
+
+
+
+
