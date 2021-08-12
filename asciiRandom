@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
+
+int main()
+{
+	srand(time(NULL));
+	int a;
+	char c;
+
+	a = rand()%26;
+	
+	c = a+65;
+
+	printf("랜덤으로 뽑힌 문자는 %c 입니다", c); 
+	
+	return 0;
+}
+
