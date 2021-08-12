@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+int comp(const void *f, const void *b) {
+		int F = *((int *)f);
+		int B = *((int *)b);
+
+		if (F>B) return 1;
+		else if (F<B) return -1;
+		else return 0;
+	}
+
+int main()
+{
+	int m[]={23,56,89,3,12,34};
+	
+	qsort(m, sizeof(m)/sizeof(int), sizeof(int), comp);
+	
+	for(int i=0; i<6; i++) printf("%d ", m[i]);	
+	return 0;
+}
+
+
