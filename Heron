@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <math.h>
+
+float getS(int a, int b, int c) {
+	return (a+b+c)/2.0;
+}
+
+float TR(int a, int b, int c){
+	
+	float s = getS(a,b,c);
+	
+	float area = sqrt( s*(s-a)*(s-b)*(s-c) );
+	return area;
+}
+
+int main() {
+
+	printf("삼각형의넓이:%.2f\n", TR(3,4,5));
+	return 0;
+}
+
+
