@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+float TR(int b, int h){
+	
+	float area;
+	area = (b*h)/2.0;
+	
+	return area;
+}
+
+
+
+int main() {
+
+	printf("삼각형의넓이:%.2f\n", TR(5,10));
+	printf("삼각형의넓이:%.2f\n", TR(3,6));
+
+	return 0;
+}
+
+
