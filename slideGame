@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <conio.h>
+void pBoard( char bb[][3]){
+	for(int i=0; i<3; i++){
+		for(int j=0; j<3; j++){
+			printf("%2c",bb[i][j]);
+		}
+		printf("\n");
+	}
+	printf("\n");
+}
+int main(void) {
+	char b[][3]={'A','B','D','E','H',' ','C','F','G'};
+	pBoard(b);
+	int r=1,c=2; 
+	char k; //key
+	while(1) {
+		k=getch();
+		switch(k) {
+			case 'd': b[r][c]=b[r][c-1];
+					  b[r][c-1]=' ';
+				      c-=1;
+				      break;
+	}
+	pBoard(b);
+	}
+return 0;
+}
+
+
+
+
+
