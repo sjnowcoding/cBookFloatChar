@@ -1,0 +1,25 @@
+#include <stdio.h>
+void pBoard( char bb[][3]){
+	for(int i=0; i<3; i++){
+		for(int j=0; j<3; j++){
+			printf("%2c",bb[i][j]);
+		}
+		printf("\n");
+	}
+}
+
+int main(void) {
+
+	char b[][3]={'A','B','D',
+				 'E','H','_',
+				 'C','F','G'};
+	
+	pBoard(b);
+	
+return 0;
+}
+
+
+
+
+
