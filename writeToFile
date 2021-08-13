@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+
+	FILE *fp = fopen("myData.txt", "w");
+	int n;
+	printf("EOF를 입력하면 종료합니다\n"); 
+	printf("파일에저장할 정수 입력:"); 
+	
+	while( scanf("%d", &n) != EOF ) {
+		
+		fprintf(fp ,"%d\n", n);	
+		printf("파일에저장할 정수 입력:"); 
+	}
+
+	fclose(fp);
+
+return 0;
+}
+
+
+
